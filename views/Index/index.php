@@ -1,1 +1,1 @@
-<h1>Welcome to PHPNible</h1>
+<h1>Hello, world!</h1>

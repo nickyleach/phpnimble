@@ -111,7 +111,7 @@ class Controller {
 		
 		Util::execute(function() use ($meta, $title, $views){
 			extract($views);
-			include 'Views/HTML.php';
+			include 'views/HTML.php';
 		});
 		
 		flush();

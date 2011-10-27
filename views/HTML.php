@@ -27,7 +27,7 @@
 		<? Template::render($header); ?>
 		</header>
 		<div id="main" role="main">
-		<? Template::render($main); ?>
+		<? Template::render($content); ?>
 		</div>
 		<footer>
 		<? Template::render($footer); ?>

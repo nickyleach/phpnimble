@@ -4,7 +4,7 @@ ini_set('display_errors', 'on');
 error_reporting(E_ERROR);
 
 function __autoload($class){
-	$path = "Library/$class.php";
+	$path = "library/$class.php";
 	
 	if(file_exists($path))
 		require_once $path;

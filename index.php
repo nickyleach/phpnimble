@@ -1,6 +1,6 @@
 <?
 
-include 'Library/bootstrap.php';
+include 'library/bootstrap.php';
 
 try {
 	$controller = Controller::create(Routing::controllerName());
