@@ -5,7 +5,14 @@ class Util {
 		call_user_func_array($closure, $args);
 	}
 	
-	public static function redirect($url){
+	public static function redirect($url, $hard = false){
+		if($hard){
+			header('HTTP/1.1 301 Moved Permanently');
+		} else {
+			header('Cache-Control:no-store, no-cache, must-revalidate, post-check=0, pre-check=0  ');
+			header('Pragma: no-cache ');
+		}
+		
 		header("Location: $url");
 		exit;
 	}
