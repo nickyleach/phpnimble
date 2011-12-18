@@ -3,7 +3,9 @@
 include 'library/bootstrap.php';
 
 try {
-	$controller = Controller::create(Routing::controllerName());
+	$controller = Controller::create(array(
+		'controller' => Routing::controllerName()
+	));
 } catch (Exception $e){
 	Util::redirect('404.html');
 }
